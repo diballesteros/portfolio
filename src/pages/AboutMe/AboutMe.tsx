@@ -15,15 +15,27 @@ const AboutMe: React.FC = () => {
         </span>
         <span className="aboutme__profile__job">Front End Web Developer</span>
         <div className="aboutme__profile__socials">
-          <div>
+          <a
+            href="http://www.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <CV />
-          </div>
-          <div>
+          </a>
+          <a
+            href="https://linkedin.com/in/diego-ballesteros-9468a7136"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LinkedIn />
-          </div>
-          <div>
+          </a>
+          <a
+            href="https://github.com/diballesteros"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Github />
-          </div>
+          </a>
         </div>
       </div>
       <div className="aboutme__biography">
@@ -34,10 +46,6 @@ const AboutMe: React.FC = () => {
           Front End Web developer where I worked on delivering a large-scale
           help desk web application to clients throughout Latin America
         </p>
-        <h3>Education</h3>
-        <ul>
-          <li>Politecnico</li>
-        </ul>
       </div>
     </div>
   )
