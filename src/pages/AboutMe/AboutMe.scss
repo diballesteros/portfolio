@@ -29,7 +29,7 @@
       text-align: center;
       font-size: 1.75em;
       font-weight: 400;
-      width: 250px;
+      max-width: 60%;
     }
 
     &__job {
@@ -38,9 +38,44 @@
       color: #999;
       font-weight: 300;
     }
+
+    &__socials {
+      display: flex;
+      flex-flow: row;
+      gap: 5px;
+      height: 50px;
+      > div {
+        width: 55px;
+        height: 55px;
+        > svg {
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+
+          &:hover {
+            width: 48px;
+            height: 48px;
+          }
+
+          path {
+            fill: #795548 !important;
+          }
+        }
+      }
+    }
   }
+
   &__biography {
     flex: 1 1 400px;
     min-width: 0;
+
+    > h2 {
+      font-size: 2.25rem;
+    }
+
+    > p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
   }
 }
