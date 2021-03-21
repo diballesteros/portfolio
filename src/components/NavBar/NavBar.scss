@@ -1,8 +1,12 @@
 .nav {
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 70px;
   min-height: 70px;
+  width: 100%;
   background-color: #fff;
   padding: 0 1rem;
   box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);

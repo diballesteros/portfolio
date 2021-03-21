@@ -7,7 +7,7 @@ import "./AboutMe.scss"
 
 const AboutMe: React.FC = () => {
   return (
-    <section className="aboutme">
+    <section className="aboutme page">
       <div className="aboutme__profile">
         <img src={picture} alt="profile" />
         <span className="aboutme__profile__name">
@@ -44,7 +44,7 @@ const AboutMe: React.FC = () => {
           I have a degree in systems engineering from the Politecnico
           Grancolombiano. Previously, I worked at Aranda Software as a Senior
           Front End Web developer where I worked on delivering a large-scale
-          help desk web application to clients throughout Latin America
+          help desk web application to clients throughout Latin America.
         </p>
       </div>
     </section>
