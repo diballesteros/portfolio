@@ -66,6 +66,9 @@
   }
 
   &__biography {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     flex: 1 1 400px;
     min-width: 0;
 

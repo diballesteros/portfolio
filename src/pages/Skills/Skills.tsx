@@ -1,5 +1,6 @@
 import React from "react"
-import Database from "../../assets/svg/sql-server.svg"
+import Framework from "../../assets/svg/framework.svg"
+import Database from "../../assets/svg/database.svg"
 import Docker from "../../assets/svg/docker.svg"
 import Programming from "../../assets/svg/Programming.svg"
 import Test from "../../assets/svg/test.svg"
@@ -12,26 +13,32 @@ const Skills: React.FC = () => {
       <h2>Skills</h2>
       <div className="skills__container">
         <div className="skills__container__skill">
-          <Programming /> <p>HTML, CSS, SASS</p>
+          <Programming /> <h3>Web Development</h3>
+          <p>HTML, CSS, SASS</p>
         </div>
-        {/* <div>
-          <ReactSVG /> <p>React, React Native</p>
-        </div> */}
         <div className="skills__container__skill">
-          <Test />
-          <p>Cypress</p>
+          <Framework /> <h3>Frameworks</h3>
+          <p>React, React Native, AngularJS</p>
         </div>
         <div className="skills__container__skill">
           <Typescript />
-          <p>Typescript</p>
+          <h3>Languages</h3>
+          <p>JavaScript, TypeScript</p>
+        </div>
+        <div className="skills__container__skill">
+          <Test />
+          <h3>Testing</h3>
+          <p>Cypress, React Testing Library</p>
         </div>
         <div className="skills__container__skill">
           <Docker />
-          <p>Docker</p>
+          <h3>DevOps</h3>
+          <p>Docker, TFS</p>
         </div>
         <div className="skills__container__skill">
           <Database />
-          <p>SQL Server</p>
+          <h3>Databases</h3>
+          <p>SQL Server, Oracle</p>
         </div>
       </div>
     </section>
