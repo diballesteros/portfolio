@@ -7,7 +7,7 @@ import "./AboutMe.scss"
 
 const AboutMe: React.FC = () => {
   return (
-    <div className="aboutme">
+    <section className="aboutme">
       <div className="aboutme__profile">
         <img src={picture} alt="profile" />
         <span className="aboutme__profile__name">
@@ -47,7 +47,7 @@ const AboutMe: React.FC = () => {
           help desk web application to clients throughout Latin America
         </p>
       </div>
-    </div>
+    </section>
   )
 }
 

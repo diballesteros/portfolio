@@ -1,6 +1,7 @@
 import React from "react"
 import NavBar from "../components/NavBar/NavBar"
 import AboutMe from "./AboutMe/AboutMe"
+import Skills from "./Skills/Skills"
 import "./index.scss"
 
 const Home: React.FC = () => {
@@ -9,6 +10,7 @@ const Home: React.FC = () => {
       <NavBar />
       <div className="body">
         <AboutMe />
+        <Skills />
       </div>
     </main>
   )
