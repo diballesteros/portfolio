@@ -5,7 +5,7 @@ import "./NavBar.scss"
 const NavBar = () => {
   return (
     <nav className="nav">
-      <div className="nav__container">
+      <div className="nav__container page">
         <h1>Diego Ballesteros Castellanos</h1>
         <div className="nav__container__actions">
           <ul>

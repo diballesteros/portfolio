@@ -20,24 +20,9 @@
     height: 100%;
     margin: 0 auto;
 
-    @media (min-width: 576px) {
-      max-width: 540px;
-    }
-
-    @media (min-width: 768px) {
-      max-width: 720px;
-    }
-
-    @media (min-width: 992px) {
-      max-width: 960px;
-    }
-
-    @media (min-width: 1200px) {
-      max-width: 1200px;
-    }
-
     h1 {
       font-size: 1.2rem;
+      font-weight: 700;
       cursor: pointer;
       white-space: nowrap;
     }
