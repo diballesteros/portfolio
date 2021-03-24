@@ -2,6 +2,7 @@ import React from "react"
 import NavBar from "../components/NavBar/NavBar"
 import AboutMe from "./AboutMe/AboutMe"
 import Skills from "./Skills/Skills"
+import Projects from "./Projects/Projects"
 import Contact from "./Contact/Contact"
 import "./index.scss"
 
@@ -11,7 +12,7 @@ const Home: React.FC = () => {
       <NavBar />
       <div className="body">
         <AboutMe />
-        <Skills />
+        <Projects />
         <Contact />
       </div>
     </main>

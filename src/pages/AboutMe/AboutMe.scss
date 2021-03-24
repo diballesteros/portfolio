@@ -1,84 +1,89 @@
 .aboutme {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  min-width: 0;
-  padding: 50px 0;
   width: 100%;
+  padding-top: 50px;
 
-  &__profile {
+  &__inner {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    gap: 0.5rem;
-    flex: 1 1 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     min-width: 0;
+    margin: auto;
+    padding: 50px 0;
 
-    > img {
-      height: 270px;
-      min-height: 270px;
-      width: 270px;
-      max-width: 270px;
-      min-width: 270px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    &__name {
-      text-align: center;
-      font-size: 1.75em;
-      font-weight: 400;
-      max-width: 60%;
-    }
-
-    &__job {
-      text-align: center;
-      font-size: 1em;
-      color: #999;
-      font-weight: 300;
-    }
-
-    &__socials {
+    &__profile {
       display: flex;
-      flex-flow: row;
-      gap: 5px;
-      height: 50px;
-      > a {
-        width: 55px;
-        height: 55px;
-        > svg {
-          width: 40px;
-          height: 40px;
-          cursor: pointer;
+      flex-flow: column nowrap;
+      align-items: center;
+      gap: 0.5rem;
+      flex: 1 1 400px;
+      min-width: 0;
 
-          &:hover {
-            width: 48px;
-            height: 48px;
-          }
+      > img {
+        height: 270px;
+        min-height: 270px;
+        width: 270px;
+        max-width: 270px;
+        min-width: 270px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
 
-          path {
-            fill: #659dbd !important;
+      &__name {
+        text-align: center;
+        font-size: 1.75em;
+        font-weight: 400;
+        max-width: 60%;
+      }
+
+      &__job {
+        text-align: center;
+        font-size: 1em;
+        color: #999;
+        font-weight: 300;
+      }
+
+      &__socials {
+        display: flex;
+        flex-flow: row;
+        gap: 5px;
+        height: 50px;
+        > a {
+          width: 55px;
+          height: 55px;
+          > svg {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+
+            &:hover {
+              width: 48px;
+              height: 48px;
+            }
+
+            path {
+              fill: #659dbd !important;
+            }
           }
         }
       }
     }
-  }
 
-  &__biography {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    flex: 1 1 400px;
-    min-width: 0;
+    &__biography {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      flex: 1 1 400px;
+      min-width: 0;
 
-    > h2 {
-      font-size: 2.25rem;
-    }
+      > h2 {
+        font-size: 2.25rem;
+      }
 
-    > p {
-      font-size: 1rem;
-      line-height: 1.5;
+      > p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
     }
   }
 }

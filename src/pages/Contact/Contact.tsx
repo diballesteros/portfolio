@@ -3,7 +3,7 @@ import "./Contact.scss"
 
 const Contact: React.FC = () => {
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <div className="contact__container page">
         <h2>Contact</h2>
         <input placeholder="Name" />
