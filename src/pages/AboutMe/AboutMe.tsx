@@ -1,15 +1,19 @@
-import React from "react"
+import React, { useRef } from "react"
 import picture from "../../../static/img/Profile.jpg"
 import CV from "../../assets/svg/cv.svg"
 import Github from "../../assets/svg/github.svg"
 import LinkedIn from "../../assets/svg/linkedin.svg"
 import Skills from "../Skills/Skills"
+import useIntersectionObserver from "../../hooks/useIntersectionObserver"
 import "./AboutMe.scss"
 
 const AboutMe: React.FC = () => {
+  const aboutMeRef = useRef()
+  const data = useIntersectionObserver(aboutMeRef, {})
+
   return (
     <section className="aboutme" id="home">
-      <div className=" aboutme__inner page">
+      <div className=" aboutme__inner page" ref={aboutMeRef}>
         <div className="aboutme__inner__profile">
           <img src={picture} alt="profile" />
           <span className="aboutme__inner__profile__name">

@@ -11,7 +11,10 @@ const Skills: React.FC = () => {
   return (
     <section className="skills">
       <div className=" skills__layout page">
-        <h2>Skills</h2>
+        <div className="skills__layout__header">
+          <h2>SKILLS</h2>
+          <div className="skills__layout__header__underline" />
+        </div>
         <div className="skills__layout__container">
           <div className="skills__layout__container__skill">
             <Programming /> <h3>Web Development</h3>
