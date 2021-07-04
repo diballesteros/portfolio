@@ -56,8 +56,6 @@ const AboutMe: React.FC = () => {
           </p>
         </div>
       </div>
-
-      <Skills />
     </section>
   )
 }

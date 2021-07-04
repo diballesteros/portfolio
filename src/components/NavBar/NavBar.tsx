@@ -1,30 +1,22 @@
-import React from "react"
-import { Link } from "react-scroll"
+import React, { forwardRef } from "react"
+import { IParallax } from "@react-spring/parallax"
 import "./NavBar.scss"
 
-const NavBar = () => {
+interface NavBarProps {
+  forwardedRef: React.MutableRefObject<IParallax>
+}
+
+const NavBar: React.FC<NavBarProps> = ({ forwardedRef }) => {
   return (
     <nav className="nav">
       <div className="nav__container page">
         <h1>Diego Ballesteros Castellanos</h1>
         <div className="nav__container__actions">
           <ul>
-            <li>
-              <Link activeClass="active" to="home" smooth spy>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link activeClass="active" smooth spy to="projects">
-                Projects
-              </Link>
-            </li>
+            <li onClick={() => forwardedRef.current.scrollTo(1)}>Home</li>
+            <li onClick={() => forwardedRef.current.scrollTo(3)}>Projects</li>
             <li>Resume</li>
-            <li>
-              <Link activeClass="active" smooth spy to="contact">
-                Contact
-              </Link>
-            </li>
+            <li onClick={() => forwardedRef.current.scrollTo(4)}>Contact</li>
           </ul>
           {/* <button>darkmode</button> */}
         </div>
