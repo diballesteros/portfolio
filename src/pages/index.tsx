@@ -26,7 +26,7 @@ const Home: React.FC = () => {
                 </span>{" "}
               </p>
               <p className="home__navigation__text">
-                I'm a front end developer.
+                I'm a front-end developer.
               </p>
               <div
                 className="home__navigation__button"
