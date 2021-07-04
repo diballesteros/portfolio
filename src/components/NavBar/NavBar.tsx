@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react"
+import React, { useEffect } from "react"
 import { IParallax } from "@react-spring/parallax"
 import "./NavBar.scss"
 
@@ -13,10 +13,10 @@ const NavBar: React.FC<NavBarProps> = ({ forwardedRef }) => {
         <h1>Diego Ballesteros Castellanos</h1>
         <div className="nav__container__actions">
           <ul>
-            <li onClick={() => forwardedRef.current.scrollTo(1)}>Home</li>
-            <li onClick={() => forwardedRef.current.scrollTo(3)}>Projects</li>
-            <li>Resume</li>
-            <li onClick={() => forwardedRef.current.scrollTo(4)}>Contact</li>
+            <li onClick={() => forwardedRef.current.scrollTo(1)}>ABOUT</li>
+            <li onClick={() => forwardedRef.current.scrollTo(2)}>PROJECTS</li>
+            <li>RESUME</li>
+            <li onClick={() => forwardedRef.current.scrollTo(3)}>CONTACT</li>
           </ul>
           {/* <button>darkmode</button> */}
         </div>

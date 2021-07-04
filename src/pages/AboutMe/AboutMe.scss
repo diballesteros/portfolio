@@ -1,89 +1,120 @@
 .aboutme {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 70px;
   color: #616161;
 
   &__inner {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column nowrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 100px;
     min-width: 0;
     margin: auto;
-    padding: 50px 0;
+    padding: 25px 0;
 
-    &__profile {
+    &__header {
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
-      gap: 0.5rem;
-      flex: 1 1 400px;
-      min-width: 0;
 
-      > img {
-        height: 270px;
-        min-height: 270px;
-        width: 270px;
-        max-width: 270px;
-        min-width: 270px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-
-      &__name {
+      > h2 {
+        font-size: 30pt;
+        font-weight: bold;
+        margin-bottom: 15px;
         text-align: center;
-        font-size: 1.75em;
-        font-weight: 400;
-        max-width: 60%;
+        color: #444649;
       }
 
-      &__job {
-        text-align: center;
-        font-size: 1em;
-        font-weight: 300;
+      &__underline {
+        background: #444649;
+        height: 4px;
+        width: 50px;
       }
+    }
 
-      &__socials {
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      &__profile {
         display: flex;
-        flex-flow: row;
-        gap: 5px;
-        height: 50px;
-        > a {
-          width: 55px;
-          height: 55px;
-          > svg {
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 0.5rem;
+        flex: 1 1 400px;
+        min-width: 0;
 
-            &:hover {
-              width: 48px;
-              height: 48px;
+        > img {
+          height: 270px;
+          min-height: 270px;
+          width: 270px;
+          max-width: 270px;
+          min-width: 270px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        &__socials {
+          display: flex;
+          flex-flow: row;
+          gap: 5px;
+          height: 50px;
+          > a {
+            width: 55px;
+            height: 55px;
+            > svg {
+              width: 40px;
+              height: 40px;
+              cursor: pointer;
+
+              &:hover {
+                width: 48px;
+                height: 48px;
+              }
+
+              path {
+                fill: #659dbd !important;
+              }
             }
+          }
+        }
+      }
+
+      &__skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+        row-gap: 1rem;
+        width: 100%;
+
+        @media (max-width: 600px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__skill {
+          display: grid;
+          grid-template-rows: auto auto auto;
+          place-items: center;
+          gap: 5px;
+
+          > h3 {
+            font-size: 1.25rem;
+            text-align: center;
+            font-weight: bold;
+          }
+
+          > svg {
+            margin-bottom: 8px;
+            width: 64px;
+            height: 64px;
 
             path {
               fill: #659dbd !important;
             }
           }
+          > p {
+            font-size: 0.8rem;
+          }
         }
-      }
-    }
-
-    &__biography {
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      flex: 1 1 400px;
-      min-width: 0;
-
-      > h2 {
-        font-size: 30pt;
-        font-weight: bold;
-      }
-
-      > p {
-        font-size: 1rem;
-        line-height: 1.5;
       }
     }
   }

@@ -12,7 +12,7 @@ const Home: React.FC = () => {
   const parallax = useRef<IParallax>(null)
   return (
     <main className="main">
-      <Parallax ref={parallax} pages={5}>
+      <Parallax ref={parallax} pages={4}>
         <ParallaxLayer offset={0}>
           <section className="home">
             <div id="stars" />
@@ -39,7 +39,7 @@ const Home: React.FC = () => {
           </section>
         </ParallaxLayer>
         <ParallaxLayer
-          sticky={{ start: 1, end: 4 }}
+          sticky={{ start: 1, end: 3 }}
           style={{ height: 70, maxHeight: 70 }}
         >
           <NavBar forwardedRef={parallax} />
@@ -48,12 +48,9 @@ const Home: React.FC = () => {
           <AboutMe />
         </ParallaxLayer>
         <ParallaxLayer offset={2} speed={0.1}>
-          <Skills />
-        </ParallaxLayer>
-        <ParallaxLayer offset={3} speed={0.1}>
           <Projects />
         </ParallaxLayer>
-        <ParallaxLayer offset={4} speed={0.1}>
+        <ParallaxLayer offset={3} speed={0.1}>
           <Contact />
         </ParallaxLayer>
       </Parallax>
