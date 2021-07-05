@@ -41,7 +41,7 @@ const AboutMe: React.FC = () => {
               <p>React, React Native, AngularJS</p>
             </div>
             <div className="aboutme__inner__container__skills__skill">
-              <Typescript />
+              <Typescript className="aboutme__inner__container__skills__skill__ts" />
               <h3>Languages</h3>
               <p>JavaScript, TypeScript</p>
             </div>
