@@ -51,7 +51,7 @@ const Home: React.FC = () => {
           <Projects />
         </ParallaxLayer>
         <ParallaxLayer offset={3} speed={0.1}>
-          <Contact />
+          <Contact forwardedRef={parallax} />
         </ParallaxLayer>
       </Parallax>
     </main>

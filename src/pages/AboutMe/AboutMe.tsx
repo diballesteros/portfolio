@@ -1,8 +1,5 @@
 import React, { useRef } from "react"
 import picture from "../../../static/img/Profile.jpg"
-import CV from "../../assets/svg/cv.svg"
-import Github from "../../assets/svg/github.svg"
-import LinkedIn from "../../assets/svg/linkedin.svg"
 import Framework from "../../assets/svg/framework.svg"
 import Database from "../../assets/svg/database.svg"
 import Docker from "../../assets/svg/docker.svg"
@@ -33,29 +30,6 @@ const AboutMe: React.FC = () => {
               large-scale help desk web application to clients throughout Latin
               America.
             </p>
-            <div className="aboutme__inner__container__profile__socials">
-              <a
-                href="http://www.google.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <CV />
-              </a>
-              <a
-                href="https://linkedin.com/in/diego-ballesteros-9468a7136"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <LinkedIn />
-              </a>
-              <a
-                href="https://github.com/diballesteros"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github />
-              </a>
-            </div>
           </div>
           <div className="aboutme__inner__container__skills">
             <div className="aboutme__inner__container__skills__skill">
