@@ -112,14 +112,14 @@ const AboutMe: React.FC = () => {
             style={dividerStyle}
           />
         </div>
-        <div className="aboutme__inner__container">
+        <div className="aboutme__inner__container" ref={profileRef}>
           <animated.div
             className="aboutme__inner__container__profile"
             style={profileStyle}
           >
             <img src={picture} alt="profile" />
             <h3>Who am I?</h3>
-            <p ref={profileRef}>
+            <p>
               I work at <a href="https://arandasoft.com/">Aranda Software</a> as
               a senior front-end web developer where I help deliver a
               large-scale help desk web application to clients throughout Latin
