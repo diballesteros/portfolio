@@ -13,7 +13,6 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@react-spring/parallax": "^9.2.3",
     "@types/react-scroll": "^1.8.2",
     "gatsby": "^3.8.1",
     "gatsby-plugin-react-svg": "^3.0.1",

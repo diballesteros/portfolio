@@ -6,11 +6,7 @@ import LinkedIn from "../../assets/svg/linkedin.svg"
 import DoubleArrow from "../../assets/svg/double-arrow.svg"
 import "./Contact.scss"
 
-interface ContactProps {
-  forwardedRef: React.MutableRefObject<IParallax>
-}
-
-const Contact: React.FC<ContactProps> = ({ forwardedRef }) => {
+const Contact: React.FC = () => {
   return (
     <section className="contact" id="contact">
       <div className="contact__container page">
@@ -21,10 +17,7 @@ const Contact: React.FC<ContactProps> = ({ forwardedRef }) => {
         <button>Send</button>
       </div>
       <footer className="contact__footer">
-        <button
-          className="contact__footer__return"
-          onClick={() => forwardedRef.current.scrollTo(0)}
-        >
+        <button className="contact__footer__return" type="button">
           <DoubleArrow />
         </button>
         <div className="contact__footer__socials">

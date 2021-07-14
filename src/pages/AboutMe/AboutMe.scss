@@ -15,8 +15,8 @@
     margin: auto;
 
     @media (max-width: 700px) {
-      padding: 10px 0;
-      height: calc(100% - 20px);
+      padding: 10px 10px 25px 10px;
+      height: calc(100% - 35px);
       gap: 20px;
     }
 
@@ -136,9 +136,12 @@
           gap: 5px;
 
           > h3 {
+            display: grid;
+            place-content: center;
             font-size: 1.25rem;
             text-align: center;
             font-weight: bold;
+            height: 40px;
           }
 
           > svg {

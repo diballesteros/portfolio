@@ -103,7 +103,7 @@ const AboutMe: React.FC = () => {
   useChain([headerApi, dividerApi, profileApi, skillsApi], [0, 0.2, 0.2, 0])
 
   return (
-    <section className="aboutme" id="home">
+    <section className="aboutme" id="about">
       <div className="aboutme__inner page">
         <div className="aboutme__inner__header" ref={headerRef}>
           <animated.h2 style={headerStyle}>ABOUT ME</animated.h2>
