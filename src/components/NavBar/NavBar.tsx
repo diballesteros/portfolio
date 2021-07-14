@@ -11,7 +11,7 @@ const NavBar: React.FC = () => {
   const [open, setOpen] = useState(false)
   const popupRef = useRef<HTMLDivElement>(null)
   const filterRef = useRef<HTMLDivElement>(null)
-  useOutsidePopup(popupRef, close, filterRef)
+  useOutsidePopup(popupRef, () => setOpen(false), filterRef)
   const transitions = useTransition(open, {
     from: { height: 0, opacity: 0 },
     enter: { height: 150, opacity: 1 },
