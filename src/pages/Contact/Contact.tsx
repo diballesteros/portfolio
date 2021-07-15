@@ -9,12 +9,17 @@ import "./Contact.scss"
 const Contact: React.FC = () => {
   return (
     <section className="contact" id="contact">
-      <div className="contact__container page">
-        <h2>Contact</h2>
-        <input placeholder="Name" />
-        <input placeholder="Email" />
-        <textarea placeholder="Message" />
-        <button>Send</button>
+      <div className="contact__inner page">
+        <div className="contact__inner__header">
+          <h2>CONTACT</h2>
+          <div className="contact__inner__header__underline" />
+        </div>
+        <div className="contact__inner__container">
+          <input placeholder="Name" />
+          <input placeholder="Email" />
+          <textarea placeholder="Message" />
+          <button>Send</button>
+        </div>
       </div>
       <footer className="contact__footer">
         <Link className="contact__footer__return" smooth to="home">

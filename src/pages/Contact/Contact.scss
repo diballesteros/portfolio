@@ -3,44 +3,89 @@
   place-items: center;
   position: relative;
   width: 100%;
-  padding-top: 100px;
-  background-color: #ffffff;
+  padding-top: 70px;
+  background-color: var(--bg);
+  z-index: 1;
 
-  &__container {
+  &__inner {
     display: flex;
     flex-flow: column nowrap;
-    gap: 18px;
-    width: 100%;
+    align-items: center;
+    gap: 100px;
+    min-width: 0;
+    height: calc(100% - 150px);
+    padding: 75px 0;
+    margin: auto;
 
-    > h2 {
-      font-size: 2.25rem;
+    @media (max-width: 700px) {
+      padding: 10px 10px 25px 10px;
+      height: calc(100% - 35px);
+      gap: 20px;
     }
 
-    > input,
-    > textarea {
-      padding: 0.5rem;
-      resize: none;
-      border: 1px solid #ced4da;
-      border-radius: 0.25rem;
-      font-family: inherit;
-      outline: none;
+    &__header {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+
+      > h2 {
+        font-size: 30pt;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-align: center;
+        color: var(--title);
+        position: relative;
+      }
+
+      &__underline {
+        background: var(--title);
+        height: 4px;
+        width: 50px;
+        position: relative;
+      }
+
+      @media (max-width: 700px) {
+        > h2 {
+          font-size: 21pt;
+        }
+      }
     }
+    &__container {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 18px;
+      width: 100%;
 
-    > textarea {
-      height: 125px;
-    }
+      > h2 {
+        font-size: 2.25rem;
+      }
 
-    > button {
-      width: fit-content;
-      padding: 5.5px;
-      background-color: transparent;
-      border-radius: 0.3rem;
-      border: 1px solid #659dbd;
-      cursor: pointer;
+      > input,
+      > textarea {
+        padding: 0.5rem;
+        resize: none;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        font-family: inherit;
+        outline: none;
+      }
 
-      &:hover {
-        background-color: #659dbd;
-        color: #ffffff;
+      > textarea {
+        height: 125px;
+      }
+
+      > button {
+        width: fit-content;
+        padding: 5.5px;
+        background-color: transparent;
+        border-radius: 0.3rem;
+        border: 1px solid var(--color);
+        color: var(--color);
+        cursor: pointer;
+
+        &:hover {
+          filter: contrast(0.5);
+        }
       }
     }
   }

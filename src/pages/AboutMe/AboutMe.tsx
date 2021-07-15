@@ -58,8 +58,10 @@ const AboutMe: React.FC = () => {
   const headerRef = useRef()
   const dividerApi = useSpringRef()
   const headerApi = useSpringRef()
-  const data = useIntersectionObserver(profileRef, {})
-  const dataHeader = useIntersectionObserver(headerRef, {})
+  const data = useIntersectionObserver(profileRef, { freezeOnceVisible: true })
+  const dataHeader = useIntersectionObserver(headerRef, {
+    freezeOnceVisible: true,
+  })
 
   const headerStyle = useSpring({
     config: { duration: 500 },
