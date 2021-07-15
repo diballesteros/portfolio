@@ -1,5 +1,5 @@
 import React from "react"
-import { IParallax } from "@react-spring/parallax"
+import { Link } from "react-scroll"
 import CV from "../../assets/svg/cv.svg"
 import Github from "../../assets/svg/github.svg"
 import LinkedIn from "../../assets/svg/linkedin.svg"
@@ -17,9 +17,9 @@ const Contact: React.FC = () => {
         <button>Send</button>
       </div>
       <footer className="contact__footer">
-        <button className="contact__footer__return" type="button">
+        <Link className="contact__footer__return" smooth to="home">
           <DoubleArrow />
-        </button>
+        </Link>
         <div className="contact__footer__socials">
           <a
             href="http://www.google.com"

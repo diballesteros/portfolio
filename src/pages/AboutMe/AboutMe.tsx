@@ -47,7 +47,7 @@ const SKILLS = [
   {
     svg: <Database />,
     h3: "Web Databases",
-    p: "SQL Server, Oracle",
+    p: "SQL Server, NodeJS",
   },
 ]
 

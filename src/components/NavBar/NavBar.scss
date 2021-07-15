@@ -8,7 +8,7 @@
   height: 70px;
   min-height: 70px;
   width: calc(100% - 2rem);
-  background-color: #fff;
+  background-color: var(--navbar);
   padding: 0 1rem;
   box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
 
@@ -25,7 +25,7 @@
     &__actions {
       display: inline-flex;
       flex-flow: row nowrap;
-      justify-content: flex-end;
+      padding-left: 50px;
       flex: 1;
 
       > ul {
@@ -37,6 +37,7 @@
 
         > li {
           cursor: pointer;
+          color: var(--color);
           .active {
             font-weight: bold;
           }
@@ -47,15 +48,15 @@
     &__hamburger {
       width: 48px;
       height: 48px;
-      margin-left: auto;
       cursor: pointer;
     }
 
     &__burgernav {
       position: absolute;
-      top: 50px;
-      right: 10px;
+      top: 55px;
+      left: 10px;
       width: 125px;
+      min-height: 0;
       background-color: #ffffff;
       border: 1px solid #ccc;
       border-radius: 4px;
@@ -81,6 +82,16 @@
             }
           }
         }
+      }
+    }
+
+    &__darkmode {
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+
+      &.active path {
+        fill: #ffffff;
       }
     }
   }

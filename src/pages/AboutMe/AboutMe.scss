@@ -2,7 +2,9 @@
   height: calc(100% - 70px);
   width: 100%;
   padding-top: 70px;
-  color: #616161;
+  background-color: var(--bg);
+  color: var(--color);
+  z-index: 1;
 
   &__inner {
     display: flex;
@@ -30,12 +32,12 @@
         font-weight: bold;
         margin-bottom: 15px;
         text-align: center;
-        color: #444649;
+        color: var(--title);
         position: relative;
       }
 
       &__underline {
-        background: #444649;
+        background: var(--title);
         height: 4px;
         width: 50px;
         position: relative;
