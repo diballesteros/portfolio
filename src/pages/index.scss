@@ -47,6 +47,23 @@ code {
   }
 }
 
+.styledButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.5rem;
+  color: inherit;
+  padding: 12px 20px;
+  border: 2px solid currentColor;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: #659dbd;
+    border-color: #659dbd;
+  }
+}
+
 .home {
   height: 100vh;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -59,29 +76,19 @@ code {
     text-align: center;
     height: 100%;
     padding: 0 5px;
+    color: #ffffff;
 
     &__text {
       margin: 0;
       padding: 0;
       font-size: 3rem;
-      color: #ffffff;
       &__highlight {
         color: #659dbd;
       }
     }
 
     &__button {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 1.5rem;
-      color: #ffffff;
-      padding: 12px 20px;
-      border: 2px solid #ffffff;
       margin-top: 20px;
-      cursor: pointer;
-      transition: all 0.5s;
-
       svg {
         width: 21px;
         height: 21px;
@@ -93,9 +100,6 @@ code {
       }
 
       &:hover {
-        background-color: #659dbd;
-        border-color: #659dbd;
-
         svg {
           transform: rotate(90deg);
         }

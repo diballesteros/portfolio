@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
           <input placeholder="Name" />
           <input placeholder="Email" />
           <textarea placeholder="Message" />
-          <button>Send</button>
+          <button className="styledButton">SEND</button>
         </div>
       </div>
       <footer className="contact__footer">

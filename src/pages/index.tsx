@@ -22,7 +22,11 @@ const Home: React.FC = () => {
             </span>{" "}
           </p>
           <p className="home__navigation__text">I'm a front-end developer.</p>
-          <Link className="home__navigation__button" smooth to="about">
+          <Link
+            className="home__navigation__button styledButton"
+            smooth
+            to="about"
+          >
             See more
             <RightArrow />
           </Link>

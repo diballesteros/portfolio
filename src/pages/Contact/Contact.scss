@@ -31,6 +31,7 @@
       flex-flow: column nowrap;
       gap: 18px;
       width: 100%;
+      color: var(--color);
 
       > h2 {
         font-size: 2.25rem;
@@ -42,6 +43,7 @@
         resize: none;
         border: 1px solid #ced4da;
         border-radius: 0.25rem;
+        font-size: 1.5rem;
         font-family: inherit;
         outline: none;
       }
@@ -52,16 +54,8 @@
 
       > button {
         width: fit-content;
-        padding: 5.5px;
         background-color: transparent;
-        border-radius: 0.3rem;
-        border: 1px solid var(--color);
-        color: var(--color);
-        cursor: pointer;
-
-        &:hover {
-          filter: contrast(0.5);
-        }
+        margin-left: auto;
       }
     }
   }
