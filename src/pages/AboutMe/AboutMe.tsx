@@ -15,6 +15,7 @@ import Test from "../../assets/svg/test.svg"
 import Typescript from "../../assets/svg/Typescript.svg"
 import useIntersectionObserver from "../../hooks/useIntersectionObserver"
 import "./AboutMe.scss"
+import Header from "../../components/Header/Header"
 
 const SKILLS = [
   {
@@ -107,13 +108,7 @@ const AboutMe: React.FC = () => {
   return (
     <section className="aboutme" id="about">
       <div className="aboutme__inner page">
-        <div className="aboutme__inner__header" ref={headerRef}>
-          <animated.h2 style={headerStyle}>ABOUT ME</animated.h2>
-          <animated.div
-            className="aboutme__inner__header__underline"
-            style={dividerStyle}
-          />
-        </div>
+        <Header title="ABOUT" />
         <div className="aboutme__inner__container" ref={profileRef}>
           <animated.div
             className="aboutme__inner__container__profile"

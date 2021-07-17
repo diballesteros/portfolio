@@ -1,20 +1,23 @@
 .contact {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
-  padding-top: 70px;
   background-color: var(--bg);
   z-index: 1;
 
   &__inner {
     display: flex;
     flex-flow: column nowrap;
+    flex: 1;
     align-items: center;
-    gap: 100px;
-    min-width: 0;
+    gap: 50px;
+    min-width: 400px;
+    width: 100%;
     height: calc(100% - 150px);
-    padding: 75px 0;
+    padding: 75px 0 100px 0;
     margin: auto;
 
     @media (max-width: 700px) {
@@ -23,33 +26,6 @@
       gap: 20px;
     }
 
-    &__header {
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-
-      > h2 {
-        font-size: 30pt;
-        font-weight: bold;
-        margin-bottom: 15px;
-        text-align: center;
-        color: var(--title);
-        position: relative;
-      }
-
-      &__underline {
-        background: var(--title);
-        height: 4px;
-        width: 50px;
-        position: relative;
-      }
-
-      @media (max-width: 700px) {
-        > h2 {
-          font-size: 21pt;
-        }
-      }
-    }
     &__container {
       display: flex;
       flex-flow: column nowrap;

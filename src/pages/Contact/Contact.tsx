@@ -1,19 +1,25 @@
-import React from "react"
+import React, { useRef } from "react"
+import {
+  animated,
+  useChain,
+  useSpring,
+  useSpringRef,
+  useTransition,
+} from "react-spring"
 import { Link } from "react-scroll"
+import useIntersectionObserver from "../../hooks/useIntersectionObserver"
 import CV from "../../assets/svg/cv.svg"
 import Github from "../../assets/svg/github.svg"
 import LinkedIn from "../../assets/svg/linkedin.svg"
 import DoubleArrow from "../../assets/svg/double-arrow.svg"
+import Header from "../../components/Header/Header"
 import "./Contact.scss"
 
 const Contact: React.FC = () => {
   return (
     <section className="contact" id="contact">
       <div className="contact__inner page">
-        <div className="contact__inner__header">
-          <h2>CONTACT</h2>
-          <div className="contact__inner__header__underline" />
-        </div>
+        <Header title="CONTACT" />
         <div className="contact__inner__container">
           <input placeholder="Name" />
           <input placeholder="Email" />

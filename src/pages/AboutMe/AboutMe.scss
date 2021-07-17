@@ -22,34 +22,6 @@
       gap: 20px;
     }
 
-    &__header {
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-
-      > h2 {
-        font-size: 30pt;
-        font-weight: bold;
-        margin-bottom: 15px;
-        text-align: center;
-        color: var(--title);
-        position: relative;
-      }
-
-      &__underline {
-        background: var(--title);
-        height: 4px;
-        width: 50px;
-        position: relative;
-      }
-
-      @media (max-width: 700px) {
-        > h2 {
-          font-size: 21pt;
-        }
-      }
-    }
-
     &__container {
       display: grid;
       grid-template-columns: 1fr 1fr;
