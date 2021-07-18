@@ -4,11 +4,66 @@
   justify-content: center;
   height: 100%;
   width: 100%;
+  color: var(--color);
   background-color: var(--secondarybg);
   z-index: 1;
 
   &__inner {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+    gap: 15px;
     height: calc(100% - 200px);
     padding: 100px 0 100px 0;
+
+    > h3 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      text-align: center;
+      align-self: center;
+    }
+
+    &__container {
+      display: flex;
+      flex-flow: column nowrap;
+
+      &__item {
+        display: flex;
+        justify-content: space-between;
+
+        &__details {
+          display: flex;
+          flex-flow: column nowrap;
+
+          > a {
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--color);
+            font-size: 1.2rem;
+            cursor: pointer;
+          }
+
+          > p {
+            font-size: 0.8rem;
+          }
+
+          > svg {
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+            filter: contrast(0.2);
+
+            &:hover {
+              filter: contrast(1);
+            }
+          }
+        }
+
+        &__image > img {
+          height: 150px;
+          width: 150px;
+        }
+      }
+    }
   }
 }
