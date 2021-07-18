@@ -4,5 +4,11 @@
   justify-content: center;
   height: 100%;
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: var(--secondarybg);
+  z-index: 1;
+
+  &__inner {
+    height: calc(100% - 200px);
+    padding: 100px 0 100px 0;
+  }
 }

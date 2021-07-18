@@ -26,11 +26,13 @@ const NavBar: React.FC = () => {
       document.documentElement.style.setProperty("--color", "#FFFFFF")
       document.documentElement.style.setProperty("--navbar", "#333333")
       document.documentElement.style.setProperty("--bg", "#212121")
+      document.documentElement.style.setProperty("--secondarybg", "#212121")
     } else {
       document.documentElement.style.setProperty("--title", "#444649")
       document.documentElement.style.setProperty("--color", "#616161")
       document.documentElement.style.setProperty("--navbar", "#FFFFFF")
       document.documentElement.style.setProperty("--bg", "#FFFFFF")
+      document.documentElement.style.setProperty("--secondarybg", "#F5F5F5")
     }
   }, [darkMode])
 
@@ -41,7 +43,7 @@ const NavBar: React.FC = () => {
           <nav className="nav__container__actions">
             <ul>
               <li>
-                <Link activeClass="active" to="about" smooth spy>
+                <Link activeClass="active" smooth spy to="about">
                   ABOUT
                 </Link>
               </li>
@@ -89,7 +91,7 @@ const NavBar: React.FC = () => {
                         <li>RESUME</li>
                         <li>
                           <Link activeClass="active" smooth spy to="contact">
-                            CONTACTS
+                            CONTACT
                           </Link>
                         </li>
                       </ul>
