@@ -56,33 +56,7 @@ const AboutMe: React.FC = () => {
   const profileRef = useRef()
   const profileApi = useSpringRef()
   const skillsApi = useSpringRef()
-  const headerRef = useRef()
-  const dividerApi = useSpringRef()
-  const headerApi = useSpringRef()
   const data = useIntersectionObserver(profileRef, { freezeOnceVisible: true })
-  const dataHeader = useIntersectionObserver(headerRef, {
-    freezeOnceVisible: true,
-  })
-
-  const headerStyle = useSpring({
-    config: { duration: 500 },
-    from: { opacity: 0, left: "-500px" },
-    to: {
-      opacity: dataHeader?.isIntersecting ? 1 : 0,
-      left: dataHeader?.isIntersecting ? "0px" : "-500px",
-    },
-    ref: headerApi,
-  })
-
-  const dividerStyle = useSpring({
-    config: { duration: 500 },
-    from: { opacity: 0, left: "-500px" },
-    to: {
-      opacity: dataHeader?.isIntersecting ? 1 : 0,
-      left: dataHeader?.isIntersecting ? "0px" : "-500px",
-    },
-    ref: dividerApi,
-  })
 
   const profileStyle = useSpring({
     config: { duration: 750 },
@@ -103,7 +77,7 @@ const AboutMe: React.FC = () => {
     leave: { opacity: 0, scale: 0 },
   })
 
-  useChain([headerApi, dividerApi, profileApi, skillsApi], [0, 0.2, 0.2, 0])
+  useChain([profileApi, skillsApi], [0, 0.2, 0.2, 0])
 
   return (
     <section className="aboutme" id="about">

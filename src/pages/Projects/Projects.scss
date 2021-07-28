@@ -21,15 +21,19 @@
       font-weight: bold;
       text-align: center;
       align-self: center;
+      position: relative;
+      margin-bottom: 1rem;
     }
 
     &__container {
       display: flex;
       flex-flow: column nowrap;
+      gap: 1rem;
 
       &__item {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        gap: 5rem;
 
         &__details {
           display: flex;
