@@ -14,7 +14,8 @@
     flex: 1;
     gap: 15px;
     height: calc(100% - 200px);
-    padding: 100px 0 100px 0;
+    width: calc(100% - 40px);
+    padding: 100px 20px 100px 20px;
 
     > h3 {
       font-size: 1.25rem;
