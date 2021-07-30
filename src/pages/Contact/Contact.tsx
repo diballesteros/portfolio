@@ -20,9 +20,9 @@ const Contact: React.FC = () => {
     config: { duration: 1500 },
   })
   return (
-    <section className="contact" id="contact">
+    <section id="contact">
       <div className="contact__inner page">
-        <Header title="CONTACT" />
+        <Header title="CONTACT ME" />
         <animated.div
           className="contact__inner__container"
           ref={contactRef}
@@ -46,7 +46,7 @@ const Contact: React.FC = () => {
         </Link>
         <div className="contact__footer__socials">
           <a
-            href="http://www.google.com"
+            href="https://docs.google.com/document/d/e/2PACX-1vT7k-kw-CXhpQLNw-DfV8SaA6dijH7yCQWKKI8mpYVNupRf7eT3-4bvRB-ICPg46v-cbEbZmsXmL54K/pub"
             target="_blank"
             rel="noopener noreferrer"
           >

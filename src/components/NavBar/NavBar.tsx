@@ -52,10 +52,19 @@ const NavBar: React.FC = () => {
                   PROJECTS
                 </Link>
               </li>
-              <li>RESUME</li>
+              <li>
+                <a
+                  href="https://docs.google.com/document/d/e/2PACX-1vT7k-kw-CXhpQLNw-DfV8SaA6dijH7yCQWKKI8mpYVNupRf7eT3-4bvRB-ICPg46v-cbEbZmsXmL54K/pub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  RESUME
+                </a>
+              </li>
               <li>
                 <Link activeClass="active" smooth spy to="contact">
-                  CONTACTS
+                  CONTACT ME
                 </Link>
               </li>
             </ul>
@@ -88,7 +97,16 @@ const NavBar: React.FC = () => {
                             PROJECTS
                           </Link>
                         </li>
-                        <li>RESUME</li>
+                        <li>
+                          <a
+                            href="https://docs.google.com/document/d/e/2PACX-1vT7k-kw-CXhpQLNw-DfV8SaA6dijH7yCQWKKI8mpYVNupRf7eT3-4bvRB-ICPg46v-cbEbZmsXmL54K/pub"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: "none", color: "inherit" }}
+                          >
+                            RESUME
+                          </a>
+                        </li>
                         <li>
                           <Link activeClass="active" smooth spy to="contact">
                             CONTACT

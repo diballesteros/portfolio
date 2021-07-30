@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React, { useRef, useState } from "react"
 import {
   animated,
   useChain,
@@ -14,8 +14,8 @@ import Programming from "../../assets/svg/Programming.svg"
 import Test from "../../assets/svg/test.svg"
 import Typescript from "../../assets/svg/Typescript.svg"
 import useIntersectionObserver from "../../hooks/useIntersectionObserver"
-import "./AboutMe.scss"
 import Header from "../../components/Header/Header"
+import "./AboutMe.scss"
 
 const SKILLS = [
   {
