@@ -46,6 +46,10 @@
             color: var(--color);
             font-size: 1.2rem;
             cursor: pointer;
+
+            &:hover {
+              text-decoration: underline;
+            }
           }
 
           > p {
@@ -67,6 +71,7 @@
         &__image > img {
           height: 150px;
           width: 150px;
+          cursor: pointer;
         }
       }
     }
